@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { Phone, Twitter, Mail, MapPin, ChevronDown, ChevronUp } from "lucide-react"
+import Link from "next/link"
 
 const contactItems = [
   { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+250 777 888 999" },
@@ -95,7 +96,7 @@ const Contact = () => {
                   <span>Saturday</span>
                   <span className="font-semibold text-blue-700">8:00 AM - 7:00 PM</span>
                 </div>
-               
+
               </div>
             </AccordionItem>
 
@@ -117,7 +118,7 @@ const Contact = () => {
                   <MapPin className="w-4 h-4 mr-2" />
                   View on Google Maps
                 </a>
-                <div className="mt-6">  
+                <div className="mt-6">
 
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.439302153581!2d30.100852575038022!3d-1.9787071980033892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca7f1309af419%3A0xd636113764d5e598!2sGOODRICH%20TV!5e0!3m2!1sen!2srw!4v1751637359501!5m2!1sen!2srw"
@@ -133,14 +134,16 @@ const Contact = () => {
           </div>
         </div>
 
-   
+
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-blue-50 to-white p-8 rounded-3xl border border-blue-100">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Ready to get started?</h3>
             <p className="text-gray-600 mb-6">Contact us today to schedule your appointment or ask any questions.</p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md">
-              <a href="/#contact">View Contacts</a>
-            </button>
+            <Link href="/#contact">
+              <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md">
+                View Contacts
+              </button>
+            </Link>
           </div>
         </div>
       </div>
