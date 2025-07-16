@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -66,7 +67,7 @@ const LoginPage = () => {
         >
           {loading ? "Logging in..." : "Login"}
         </button>
-        <a href="/" className="text-blue-300 text-center">Back to home</a>
+        <Link href="/" className="text-blue-300 text-center">Back to home</Link>
       </form>
     </div>
   );
