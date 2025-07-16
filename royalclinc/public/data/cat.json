@@ -1,0 +1,10 @@
+{
+  "departments": [
+    { "name": "Orthodontics", "value": 25 },
+    { "name": "Prosthodontics", "value": 15 },
+    { "name": "Restorative", "value": 30 },
+    { "name": "Conservative", "value": 20 },
+    { "name": "Periodontology", "value": 10 },
+    { "name": "Oral maxillofacial surgery", "value": 5 }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sidebarItems": [
+    { "name": "Dashboard", "href": "/dashboard", "icon": "House" },
+    { "name": "Patients", "href": "/dashboard/patients", "icon": "Users" },
+    { "name": "Appointments", "href": "/dashboard/appointments", "icon": "Calendar" },
+    { "name": "Logout", "href": "/", "icon": "Settings" }
+  ],
+  "departments": [
+    { "name": "Orthodontics", "value": 25 },
+    { "name": "Prosthodontics", "value": 15 },
+    { "name": "Restorative", "value": 30 },
+    { "name": "Conservative", "value": 20 },
+    { "name": "Periodontology", "value": 10 },
+    { "name": "Oral maxillofacial surgery", "value": 5 }
+  ]
+}
